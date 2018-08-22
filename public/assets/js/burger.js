@@ -61,6 +61,13 @@ $(function() {
     });
 
     $("#submit").on("click" , function(){
+        var newburgerName = $("#text").val();
+        if(newburgerName == ""){
+            
+            alert("Please Input something!!");
+
+
+        }else{
         console.log("just submit")
         $(".row").attr("hidden" , false);
       
@@ -79,6 +86,10 @@ $(function() {
             console.log("new burger just added.");
             // location.reload();
         })
+
+
+        }
+
     });
 });
 
